@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <title>Integratic-Signup</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/integratic.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body ng-controller="LoginCtrl">
+
+<div class="container">
+    <div class="login-card">
+            <h1>Sign Up</h1>
+            <form>
+                <input type="text" placeholder="E-mail address" ng-model="user.email">
+                <input type="password" placeholder="Password" ng-model="user.password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="submit" name="login" class="login login-submit" value="Signup" ng-click="register()">
+            </form>
+    </div>
+    <div class="already">
+        <p>Already have an account?</p>
+        <a href="signin.html">Sign in</a>
+    </div>
+</div>
+</body>
+<!--Angularjs -->
+<script type="text/javascript" src="../lib/angular/angular.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/controllers/signCtrl.js"></script>
+</html>
